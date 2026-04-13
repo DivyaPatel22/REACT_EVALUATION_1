@@ -57,10 +57,6 @@ export default function TagInput() {
 
   return (
     <div>
-        <label htmlFor="tag">Enter Tag Name : </label>
-        <input type="text" id="tag" name="tag" value={inputValue} onChange={handleChange} />
-        {/* <button onClick={AddTag}>Add</button> */}
-
         <h1>Tags : </h1>
         {
             error ? <p style={{color:'red'}}>{error}</p> :
@@ -71,6 +67,10 @@ export default function TagInput() {
                </div>
            ))
         }
+        <label htmlFor="tag">Enter Tag Name : </label>
+        <input type="text" id="tag" name="tag" value={inputValue} onChange={handleChange} />
+        {/* <button onClick={AddTag}>Add</button> */}
+
     </div>
   )
 }
